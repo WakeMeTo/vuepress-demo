@@ -1,0 +1,59 @@
+---
+lang: zh-CN
+title: 页面的标题
+description: 页面的描述
+---
+<!-- 相对路径 -->
+[首页](../README.md)  
+[配置参考](../reference/config.md)  
+[快速上手](./getting-started.md)  
+<!-- 绝对路径 -->
+[指南](/zh/guide/README.md)  
+[配置参考 > markdown.links](/zh/reference/config.md#links)  
+<!-- URL -->
+[GitHub](https://github.com) 
+
+VuePress 2 已经发布 :tada: ！
+
+
+```ts{1,6-8}
+import { defaultTheme, defineUserConfig } from 'vuepress'
+
+export default defineUserConfig({
+  title: '你好， VuePress',
+
+  theme: defaultTheme({
+    logo: 'https://vuejs.org/images/logo.png',
+  }),
+})
+```
+
+::: tip
+这是一个提示
+:::
+
+::: warning
+这是一个警告
+:::
+
+::: danger
+这是一个危险警告
+:::
+
+::: details
+这是一个 details 标签
+:::
+
+
+:::: code-group
+::: code-group-item FOO
+```ts
+const foo = 'foo'
+```
+:::
+::: code-group-item BAR
+```ts
+const bar = 'bar'
+```
+:::
+::::
